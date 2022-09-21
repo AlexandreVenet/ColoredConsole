@@ -32,15 +32,15 @@ Le programme prend la forme d'une **classe statique** `Colored` qui présente de
 - `Write()` : écrire des **caractères dans le flux de texte**.
 - `WriteLine()` : écrire des caractères avec un ajout automatique de caractère de terminaison pour former une **ligne de texte**. 
 ```
-Colored.WriteLine("...");
-```
-```
 Colored.Write("...");
 ```
+```
+Colored.WriteLine("...");
+```
 
-Pour son fonctionnement, cette classe a besoin d'une autre classe nommée `Colors` qui présente  **deux champs publics** du type C# `ConsoleColor`, l'un pour le *foreground*, l'autre pour le *background*. Cette classe propose également **deux méthodes publiques** pour **récupérer les couleurs actuelles** de la console et pour **appliquer à la console les couleurs conservées dans les champs**.
+Pour son fonctionnement, cette classe a besoin d'une autre classe nommée `Colors` qui présente  **deux champs publics** du type C# `ConsoleColor`, l'un pour le *foreground*, l'autre pour le *background*. Cette classe propose également **deux méthodes publiques** : l'une pour **récupérer les couleurs actuelles** de la console, l'autre pour **appliquer à la console les couleurs conservées dans les champs**.
 
-Le programme part des couleurs **actuellement utilisées** par la Console et **y revient** une fois terminé. Par conséquent, il est compatible avec l'usage des propriétés .NET `Console.ForegroundColor` et `Console.BackgroundColor`.
+Le programme part des couleurs **actuellement utilisées** par la console et **y revient** une fois terminé. Par conséquent, il est compatible avec l'usage des propriétés C# `Console.ForegroundColor` et `Console.BackgroundColor`.
 
 La **documentation** des champs, classes ou fonctions est intégrée et apparaît en **IntelliSense** dans **Visual Studio**.
 
