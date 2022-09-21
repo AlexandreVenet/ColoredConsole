@@ -1,4 +1,4 @@
-# Notes
+# Colored Console
 
 ## But
 
