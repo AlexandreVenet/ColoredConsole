@@ -7,6 +7,10 @@ namespace ColoredConsole
 	{
 		static void Main(string[] args)
 		{
+			// Paramètres de l'application Console
+			Console.OutputEncoding = System.Text.Encoding.UTF8;
+			Console.Title = "Colored Console";
+
 			Console.WriteLine("TEST 1");
 			Colored.Write("Voici un <color text=Red background=DarkYellow>texte coloré avec fond coloré.</color>. ");
 			Colored.Write("Voici un <color background=DarkYellow text=Red>texte coloré avec fond coloré.</color>. ");
